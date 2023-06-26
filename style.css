@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#96C93E;
+    --black:#1e3392;
+    --light-color:#666;
+    --yellow: #BB8837;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: "Poppins", Sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header{
+    position:relative;
+    top: 0;
+    left: 0;
+    right:0;
+    background: #96C93E;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .logo i{
+    color: var(--green);
+}
+header .navbar a{
+    
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: white;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--black);
+}
+header .navbar .active a{
+    color: #fff;
+    background: var(--black);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--black);
+    border-radius: 50%;
+
+}
+header .icons i:hover{
+    color: #fff;
+    background: var(--green);
+    transform:rotate(360deg);
+    transition: .2s;
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.container {
+    position:relative;
+    background: #b5f6aa;
+}
+.slide-1 {
+    background: url('images/1.jpg');
+    object-fit: contain;
+}
+.slide-2 {
+    background: url('images/2.jpg');
+    object-fit: contain;
+}
+.slide-3 {
+    background: url('images/3.jpg');
+    object-fit: contain;
+}
+.slide-4 {
+    background: url('images/4.jpg');
+    object-fit: contain;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+    /*Whatsapp ICON*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: -10px;
+    left: -10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+
+
+.caption {
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 0px;
+}
+.caption h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding: 18px;
+}
+.caption p {
+    max-width: 600px;
+    width: 90%;
+    margin: 0px auto;
+    color: #ccc;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    transform: background 500ms;
+}
+.arrow img {
+    width: 50px;
+}
+.arrow:hover {
+    background: rgba(0, 0, 0, .4);
+}
+.l {
+    left: 0;
+}
+.r {
+    right: 0;
+}
+/* section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 6.8rem;
+    padding-bottom: 2rem;
+} */
+.reveal{
+    transform: translateY(110px);
+    transition: 1s all ease;
+  }
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.container-about {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--green);
+    background: var(--green);
+  }
+  .left {
+    flex-basis: 50%;
+    padding: 80px;
+    font-size: 30px;
+    color: white;
+
+  }
+  .right {
+    flex-basis: 50%;
+    padding: 30px;
+    background-color: var(--black);
+  }
+  .right h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+  .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+
+.direction{
+    text-align: center;
+}
+.direction button{
+    font-family: cursive;
+    font-weight: bold;
+    background-color: var(--black);
+    color: white;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin:0 10px;
+}
+.direction button:hover{
+    background-color: #9cf19f96;
+}
+.item{
+    border-radius: 15px;
+    width:300px;
+    height:440px;
+    background-image: linear-gradient(to top, #eeeeee95, #f7f7f77c);
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+}
+.item .content{
+    padding:30px;
+    font-family: monospace;
+}
+.item img{
+    /* width: 100%; */
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item img:hover{
+    transform: scale(1.3);
+}
+.item h2{
+    text-align: center;
+}
+.item p{
+    padding: 12px;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+.item .content table td{
+    padding:5px 0;
+    /* border-bottom: 1px solid #AEC0CE; */
+    font-size: 50px;
+    font-weight: bold;
+}
+.item .content table td:nth-child(2){
+    text-align: right;
+}
+.item .nameGroup{
+    text-align: center;
+    border-bottom:none!important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item tr td{
+    padding: 14px;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+#list{
+    display: flex;
+    width:max-content;
+}
+#formList{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:100px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+    display: none;
+}
+
+
+.container-quality {
+    margin-top: 2rem;
+    background-color: var(--green);
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.heading{
+    text-align: center;
+    background: var(--black);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+section{
+    min-height: 40vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.features .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .box-container .box{
+    flex: 1 1 20rem;
+    background: #fff;
+    border-radius: .5rem;
+    /* border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+.features .box-container .box img{
+    height: 20rem;
+}
+
+.features .box-container .box img:hover{
+    transform: scale(1.25);
+}
+
+
+.contact{
+    background-color: var(--black);
+}
+.contact .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .box-container .box{
+    flex: 1 1 20rem;
+    border-radius: .5rem;
+    /* border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+.contact .box-container .box i{
+    font-size: 30px;
+    padding: 10px;
+    color: var(--green);
+}
+.contact .box-container .box h2{
+    color: white;
+}
+.contact .box-container .box p{
+    font-size: 14px;
+    padding: 10px;
+    color: grey;
+}
+
+
+
+/* ------- ABOUT --------*/
+
+.about{
+    /*background: url(images/about-bg.png);*/
+    background-size: cover;
+    background-position: center;
+}
+
+
+.about .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .column .image{
+    flex: 1 1 40rem;
+}
+
+.about .column .image img{
+    width: 100%;
+    padding: 25px;
+}
+
+.about .column .content{
+    flex: 1 1 40rem;
+}
+
+.about .column .content h3{
+    font-size: 3rem;
+    color: #666;
+}
+.about .column .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.about .column .content .buttons a:last-child{
+    margin-left: 2rem;
+}
+
+
+footer {
+    background-color: var(--green);
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text p {
+    color: white;
+    margin: 0;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .social-icons a:hover {
+    color: gray;
+  }
+  
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .item{
+        width: calc(33.3vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .item{
+        width: 28%;
+        /* height: 200px; */
+    }
+    .direction{
+        display: none;
+    }
+    .features{
+        margin-top: 5rem;
+    }
+    #list .item{
+        width: 7%;
+    }
+    .supprt img{
+        height: 50px;
+    }
+}
+@media screen and (max-width: 480px){
+    .features{
+        margin-top: 30rem;
+    }
+}
+
+
+  
+  @media only screen and (max-width: 600px) {
+    .left, .right {
+      flex-basis: 100%;
+    }
+  }
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .icons #contact-menu{
+        display: none;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0, 100% 0,0 0);
+    }
+    header .navbar a{
+        color: #1e3392;
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+    .slide{
+        height: 300px;
+        overflow: scroll;
+    }
+    .right{
+        padding: 10px;
+    }
+    .left{
+        padding: 20px;
+    }
+}
+@media (max-width:991px){
+    html{
+        font-size: 50%;
+    }
+}
+

@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/sanabil.png">
+    <title>Pizza Website</title>
+
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.jpeg" alt="" height="100"></a>
+        <nav class="navbar">
+            <a href="about.html">About Us</a>
+            <a href="#products">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <a href="" id="contact-menu"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </header>
+
+    <a onclick="topFunction()" id="myBtn" title="Go to top"><img class="supprt" src="images/support.png" height="50px" alt=""></a>
+    <div class="container">
+        <div class="arrow l" onclick="prev()">
+            <img src="images/l.png" alt="l">
+        </div>
+        <div class="slide slide-1">
+             <div class="caption">
+                 <!-- <h3>New York</h3>
+                 <p>We love the Big Apple!</p> -->
+             </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="caption">
+                <!-- <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p> -->
+            </div>
+       </div>
+       <div class="slide slide-3">
+            <div class="caption">
+                <!-- <h3>Bahar Dar</h3>
+                <p>Thank you, Bahar Dar!</p> -->
+            </div>
+       </div>
+       <!-- <div class="slide slide-4">
+        <div class="caption">
+            <h3>Bahar Dar</h3>
+            <p>Thank you, Bahar Dar!</p>
+        </div>
+   </div> -->
+       <div class="arrow r" onclick="next()">
+            <img src="images/r.png" alt="r">
+        </div>
+    </div>
+
+    
+
+    <div class="container-about">
+        <div class="left">
+          <h2>Taste and enjoy</h2>
+        </div>
+        <div class="right">
+          <h2>Welcome to Barkat Al-Sanabil!</h2><br>
+          <p>The alternative pasta with authentic taste. Made with care in small batches using rice, sun-ripened corn and generations of Italian pasta making know-how, a traditional bronze-die extrusion makes every bite bellissimo!</p>
+        </div>
+      </div>
+
+      <div id="products">
+        <div class="heading" style="margin-top: 2rem;">Our Products</div>
+      </div>
+
+      <div id="formList">
+        <div id="list">
+            <div class="item">
+                <img src="images/product.png">
+                <div class="content-item">
+                    <h2>PRODUCT 1</h2><br>
+                    <p>
+                        A classic pasta loved by family and friends, It thimble like shape help scoop up sauce for the perfect, satisfying bite.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/product2.png">
+                <div class="content-item">
+                    <h2>PRODUCT 2</h2><br>
+                    <p>
+                        A classic pasta loved by family and friends, It thimble like shape help scoop up sauce for the perfect, satisfying bite.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/product3.png">
+                <div class="content-item">
+                    <h2>PRODUCT 3</h2><br>
+                    <p>
+                        A classic pasta loved by family and friends, It thimble like shape help scoop up sauce for the perfect, satisfying bite.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/product.png">
+                <div class="content-item">
+                    <h2>PRODUCT 4</h2><br>
+                    <p>
+                        A classic pasta loved by family and friends, It thimble like shape help scoop up sauce for the perfect, satisfying bite.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/product.png">
+                <div class="content-item">
+                    <h2>PRODUCT 5</h2><br>
+                    <p>
+                        A classic pasta loved by family and friends, It thimble like shape help scoop up sauce for the perfect, satisfying bite.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/product.png">
+                    <div class="content-item">
+                        <h2>PRODUCT 6</h2><br>
+                        <p>
+                            A classic pasta loved by family and friends, It thimble like shape help scoop up sauce for the perfect, satisfying bite.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="direction">
+        <button id="prev"> < </button>
+        <button id="next"> > </button>
+    </div>
+    
+    <div class="container-quality">
+        <img src="images/free-from.png" alt="Your Image" class="image">
+    </div>
+
+    <div class="main-image">
+        <img src="images/main.jpg" alt="" class="image">
+    </div>
+
+
+    <section class="features" id="features">
+        <h1 class="heading">Our Other Brands</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/brand1.png">
+            </div>
+
+            <div class="box">
+                <img src="images/brand2.png">
+            </div>
+
+            <div class="box">
+                <img src="images/brand3.png">
+            </div>
+
+            <div class="box">
+                <img src="images/brand4.png">
+            </div>
+        </div>
+     </section>
+
+
+     <section class="contact" id="contact">
+        <h1 class="heading" style="color: aliceblue;">Contact Us</h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>Find Us</h2>
+                <p>2nd Industrial City, Jeddah</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-phone"></i>
+                <h2>Call Us</h2>
+                <p>00000 11111</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fa-regular fa-envelope"></i>  
+                <h2>Mail Us</h2>  
+                <p>alsanabil@gmail.com</p>           
+            </div>
+        </div>
+     </section>
+
+      
+     <footer>
+        <div class="footer-content">
+          <div class="logo">
+            <img src="images/logo.jpeg" alt="Logo" height="55px">
+          </div>
+          <div class="text">
+            <p>&copy; 2023 Al-Sanabil  Products | Terms & Privacy</p>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let slide = document.querySelectorAll('.slide');
+        var current = 0;
+    
+        function cls() {
+            for (let i = 0; i < slide.length; i++) {
+                slide[i].style.display = 'none';
+            }
+        }
+    
+        function next() {
+            cls();
+            if (current === slide.length - 1) current = -1;
+            current++;
+    
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+    
+            var x = 0.4;
+            var intX = setInterval(function () {
+                x += 0.1;
+                slide[current].style.opacity = x;
+                if (x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+        }
+    
+        function prev() {
+            cls();
+            if (current === 0) current = slide.length;
+            current--;
+    
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+    
+            var x = 0.4;
+            var intX = setInterval(function () {
+                x += 0.1;
+                slide[current].style.opacity = x;
+                if (x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+        }
+    
+        function startAutoSlide() {
+            setInterval(function () {
+                next();
+            }, 4000);
+        }
+    
+        function start() {
+            cls();
+            slide[current].style.display = 'block';
+            startAutoSlide();
+        }
+    
+        start();
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
